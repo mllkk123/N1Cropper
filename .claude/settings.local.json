@@ -33,7 +33,32 @@
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R heavenmllkk91-boop/N1Cropper -L 1 --json conclusion,status,url -q '.[0]')",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24779340349 -R heavenmllkk91-boop/N1Cropper --log-failed)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24779340349 -R heavenmllkk91-boop/N1Cropper --log --job build)",
-      "Bash(git commit -m 'fix: 修正资源引用和 Ktor API 调用 *)"
+      "Bash(git commit -m 'fix: 修正资源引用和 Ktor API 调用 *)",
+      "Read(//e/AI项目管理/**)",
+      "Read(//e//**)",
+      "Read(//d//**)",
+      "Read(//c/Users/NV1063/Desktop/**)",
+      "Bash(rm -rf 260422_N1光影相册_V01_UPLOAD)",
+      "Bash(cp -r 260422_N1光影相册_V01 260422_N1光影相册_V01_UPLOAD)",
+      "Bash(rm -rf 260422_N1光影相册_V01_UPLOAD/.git)",
+      "Bash(rm -rf 260422_N1光影相册_V01_UPLOAD/.claude)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo view heavenmllkk91-boop/N1Cropper --json defaultBranchRef,name -q '.')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/heavenmllkk91-boop/N1Cropper/branches --jq '.[].name')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/heavenmllkk91-boop/N1Cropper/contents/.github/workflows/build.yml?ref=master --jq '.type,.content')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/heavenmllkk91-boop/N1Cropper/contents/.github/workflows/build.yml?ref=main --jq '.type,.content')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo delete heavenmllkk91-boop/N1Cropper --yes)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth logout)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth login --web --hostname github.com --git-protocol https --skip-ssh-key)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth refresh -h github.com -s workflow,delete_repo -c)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo delete mllkk123/260422_N1-_V01 --yes)",
+      "Bash(git remote *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo delete mllkk123/N1Cropper --yes)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R mllkk123/N1Cropper -L 2)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R mllkk123/N1Cropper -L 1 --json conclusion,url -q '.[0]')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24782073266 -R mllkk123/N1Cropper --log --job build)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/mllkk123/N1Cropper/actions/runs/24782073266/logs -H \"Accept: application/vnd.github+json\" --jq '.url')",
+      "Read(//tmp/**)",
+      "Bash(git commit -m 'fix: Ktor 2.x API 修正 *)"
     ]
   }
 }
