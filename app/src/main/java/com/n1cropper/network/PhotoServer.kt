@@ -45,7 +45,7 @@ class PhotoServer(private val context: Context) {
     val photoList: StateFlow<List<Photo>> = _photoList.asStateFlow()
 
     val port: Int
-        get() = server?.resolvedConnectors()?.firstOrNull()?.port ?: 8080
+        get() = server?.environment?.connectors?.firstOrNull()?.port ?: 8080
 
     fun start() {
         if (server != null) return

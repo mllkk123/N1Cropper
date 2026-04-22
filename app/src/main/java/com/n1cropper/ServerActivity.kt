@@ -107,7 +107,7 @@ class ServerActivity : AppCompatActivity() {
         selectedPhotos.clear()
         photoAdapter.setSelectionMode(isDeleteMode)
         fabDelete.setImageResource(
-            if (isDeleteMode) android.R.drawable.ic_menu_delete else android.R.drawable.ic_menu_close_clear_cancel
+            if (isDeleteMode) android.R.drawable.ic_menu_delete else android.R.drawable.ic_menu_close
         )
     }
 
