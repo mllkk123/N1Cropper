@@ -58,7 +58,11 @@
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24782073266 -R mllkk123/N1Cropper --log --job build)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/mllkk123/N1Cropper/actions/runs/24782073266/logs -H \"Accept: application/vnd.github+json\" --jq '.url')",
       "Read(//tmp/**)",
-      "Bash(git commit -m 'fix: Ktor 2.x API 修正 *)"
+      "Bash(git commit -m 'fix: Ktor 2.x API 修正 *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R mllkk123/N1Cropper -L 1)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24782584801 -R mllkk123/N1Cropper --log --job build)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/mllkk123/N1Cropper/actions/runs/24782584801 --jq '.logs_url')",
+      "Bash(git commit -m 'fix: 修正 isSuccess 调用和系统图标引用 *)"
     ]
   }
 }

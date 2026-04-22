@@ -33,7 +33,7 @@ class PhotoClient {
     suspend fun getPhotoList(device: DeviceInfo): List<Photo> {
         return try {
             val response = client.get("http://${device.host}:${device.port}/api/photos")
-            if (response.status.isSuccess) {
+            if (response.status.isSuccess()) {
                 response.body<PhotoList>().photos
             } else emptyList()
         } catch (e: Exception) {
@@ -48,7 +48,7 @@ class PhotoClient {
                 contentType(ContentType.MultiPart.FormData)
                 setBody(bytes)
             }
-            response.status.isSuccess
+            response.status.isSuccess()
         } catch (e: Exception) {
             false
         }
@@ -74,7 +74,7 @@ class PhotoClient {
                 this.contentType(contentType)
                 setBody(fullBody)
             }
-            response.status.isSuccess
+            response.status.isSuccess()
         } catch (e: Exception) {
             false
         }
@@ -85,7 +85,7 @@ class PhotoClient {
             val response = client.delete(
                 "http://${device.host}:${device.port}/api/photos/${photoName}"
             )
-            response.status.isSuccess
+            response.status.isSuccess()
         } catch (e: Exception) {
             false
         }

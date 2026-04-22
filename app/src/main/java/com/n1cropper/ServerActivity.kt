@@ -106,9 +106,7 @@ class ServerActivity : AppCompatActivity() {
         isDeleteMode = !isDeleteMode
         selectedPhotos.clear()
         photoAdapter.setSelectionMode(isDeleteMode)
-        fabDelete.setImageResource(
-            if (isDeleteMode) android.R.drawable.ic_menu_delete else android.R.drawable.ic_menu_close
-        )
+        fabDelete.setImageResource(android.R.drawable.ic_menu_delete)
     }
 
     private fun toggleSelection(photo: Photo) {
