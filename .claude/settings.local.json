@@ -17,7 +17,18 @@
       "Bash(cat)",
       "Bash(git add *)",
       "Bash(git commit -m 'feat: N1光影相册 v2.0 初始版本 *)",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth refresh -s workflow)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth refresh -h github.com -s workflow -c)",
+      "Bash(git push *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth setup-git)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R heavenmllkk91-boop/N1Cropper -L 3)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" workflow list -R heavenmllkk91-boop/N1Cropper)",
+      "Bash(git branch *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R heavenmllkk91-boop/N1Cropper -L 5)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R heavenmllkk91-boop/N1Cropper -L 1 --json status,conclusion,url -q '.[0]')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24778986374 -R heavenmllkk91-boop/N1Cropper --log-failed)",
+      "Bash(git commit -m 'fix: 修复 Kotlin 编译错误 *)"
     ]
   }
 }

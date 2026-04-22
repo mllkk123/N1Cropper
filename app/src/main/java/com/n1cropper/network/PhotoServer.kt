@@ -14,6 +14,7 @@ import io.ktor.http.content.streamProvider
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.call
 import io.ktor.server.application.install
+import io.ktor.server.engine.ApplicationEngine
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 import io.ktor.server.plugins.contentnegotiation.ContentNegotiation
@@ -38,13 +39,13 @@ class PhotoServer(private val context: Context) {
         "N1Cropper"
     ).apply { mkdirs() }
 
-    private var server: io.ktor.server.engine.EmbeddedServer<*, *>? = null
+    private var server: ApplicationEngine? = null
 
     private val _photoList = MutableStateFlow<List<Photo>>(emptyList())
     val photoList: StateFlow<List<Photo>> = _photoList.asStateFlow()
 
     val port: Int
-        get() = server?.engine?.resolvedConnectors()?.firstOrNull()?.port ?: 8080
+        get() = server?.resolvedConnectors()?.firstOrNull()?.port ?: 8080
 
     fun start() {
         if (server != null) return

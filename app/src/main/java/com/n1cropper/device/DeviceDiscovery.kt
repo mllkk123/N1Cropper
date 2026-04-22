@@ -27,7 +27,7 @@ class DeviceDiscovery(context: Context) {
         val serviceInfo = NsdServiceInfo().apply {
             serviceName = SERVICE_NAME
             serviceType = SERVICE_TYPE
-            port = port
+            this.port = port
         }
         registrationListener = object : NsdManager.RegistrationListener {
             override fun onServiceRegistered(info: NsdServiceInfo) {}
