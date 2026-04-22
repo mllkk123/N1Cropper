@@ -62,7 +62,16 @@
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run list -R mllkk123/N1Cropper -L 1)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" run view 24782584801 -R mllkk123/N1Cropper --log --job build)",
       "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/mllkk123/N1Cropper/actions/runs/24782584801 --jq '.logs_url')",
-      "Bash(git commit -m 'fix: 修正 isSuccess 调用和系统图标引用 *)"
+      "Bash(git commit -m 'fix: 修正 isSuccess 调用和系统图标引用 *)",
+      "Bash(java -version)",
+      "Bash(export JAVA_HOME=\"/c/Program Files/Eclipse Adoptium/jdk-17.0.18.8-hotspot\")",
+      "Bash(export PATH=\"$JAVA_HOME/bin:$PATH\")",
+      "Bash(export ANDROID_HOME=\"/c/Users/NV1063/AppData/Local/Android/Sdk\")",
+      "Bash(export PATH=\"$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH\")",
+      "Bash(./gradlew.bat assembleDebug --no-daemon)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\NV1063\\AppData\\Local\\Android\\Sdk"
     ]
   }
 }
