@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth *)",
+      "Bash(winget --version)",
+      "Bash(scoop --version)",
+      "Bash(choco --version)",
+      "Bash(winget install *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth status)",
+      "Bash(\"/c/Program Files \\(x86\\)/GitHub CLI/gh.exe\" auth status)",
+      "Read(//c/Program Files/GitHub CLI//**)",
+      "Bash(export GH_TOKEN=\"\")",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth login --help)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" auth login --web --git-protocol https --skip-ssh-key)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" repo create N1Cropper --public --source=. --push --description \"N1光影相册 - 诺基亚N1平板照片互传工具\")",
+      "Bash(git init *)",
+      "Bash(cat)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: N1光影相册 v2.0 初始版本 *)",
+      "Bash(git config *)"
+    ]
+  }
+}
